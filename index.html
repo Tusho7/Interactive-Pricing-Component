@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"/>
+        <title>Interactive Pricing Component</title>
+    </head>
+    <body>
+        <div class="main-container">
+            <!-- <div class="header"> -->
+                <header class="main-header">
+                    <img class="second-image" src="./images/pattern-circles.svg" alt="circles"/>
+
+                    <div class="header-texts">
+                        <h1 class="header-title">Simple, traffic-based pricing</h1>
+                        <p class="header-text">Sign-up for our 30-day trial. No credit card required.
+                        </p>
+                    <!-- </div> -->
+                </header>
+            
+
+            <div class="white-container">
+                <div class="white-container-title">
+                    <div class="titles">
+                    <p class="title" id="title">100K</p> 
+                    <p class="title-text">PAGEVIEWS</p>
+                    </div>
+
+                    <div class="price-month-desktop">
+                        <p class="price-desktop" id="price-dekstop">$16.00</p>
+                        <p class="month-desktop">/ month</p>
+                    </div>
+                </div>
+
+                <div class="line-and-slider">
+                
+                <div class="white-container-image-and-line">
+                    <input type="range" id="range" name="range"
+                    min="1" max="5" class="rangechange" value="">
+
+                    <span class="change-color" id="change-color"></span>
+                </div>
+                </div>
+
+                <div class="price-month">
+                    <p class="price" id="price">$16.00</p>
+                    <p class="month">/ month</p>
+                </div>
+
+                <div class="monthly-yearly-billing">
+                    <p class="monthly-billing">Monthly Billing</p>
+
+                    <label for="toggle-input" class="toggle">
+
+                    <input type="checkbox" class="toggle__input" id="toggle-input" value="" />
+
+                    <div class="toggle__bar">
+                        <div class="toggle__spin" id="toggle__spin"></div>
+                    </div>
+
+                    </label>
+
+                    <p class="yearly-billing">Yearly Billing</p>
+                    
+                    <div class="discount-percent">
+                    <p class="percent">-25%</p>
+                    <p class="discount">discount</p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="footer">
+
+                <div class="about">
+                    <div class="flex img-text-first">
+                        <img class="icon-check" src="./images/icon-check.svg"/>
+                        <p class="text first-text">Unlimited websites</p>
+                    </div>
+
+                    <div class="flex img-text-second">
+                        <img class="icon-check" src="./images/icon-check.svg"/>
+                        <p class="text second-text">100% data ownership </p>
+                    </div>
+
+                    <div class="flex img-text-third">
+                        <img class="icon-check" src="./images/icon-check.svg"/>
+                        <p class="text third-text">Email reports</p>
+                    </div>
+                </div>
+
+                <div class="button">
+                    <button class="start-trial-button">Start my trial</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <script src="script.js"/>
+    </body>
+</html>
